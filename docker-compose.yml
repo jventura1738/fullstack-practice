@@ -34,3 +34,7 @@ services:
     - "5001:5432"
     container_name: database-docker
     restart: always
+    environment:  
+      - POSTGRES_DB=pokemondb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
